@@ -1,8 +1,8 @@
 ::CONFIG::
-preguntas: 15
-tiempo: 30
-titulo: Simulador MTCNA Prueba
-aprobacion: 95
+preguntas: 25
+tiempo: 60
+titulo: Simulador MTCNA
+aprobacion: 60
 ::FIN_CONFIG::
 
 ::PREGUNTA::
