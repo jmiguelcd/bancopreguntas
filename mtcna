@@ -1,3 +1,10 @@
+::CONFIG::
+preguntas: 5
+tiempo: 10
+titulo: Simulador MTCNA
+aprobacion: 60
+::FIN_CONFIG::
+
 ::PREGUNTA::
 ¿Cuál de las siguientes opciones evitaría que clientes desconocidos se conecten a tu AP? Elige la MEJOR respuesta.
 
