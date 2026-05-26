@@ -1,0 +1,153 @@
+::PREGUNTA::
+¿Cuál de las siguientes opciones evitaría que clientes desconocidos se conecten a tu AP? Elige la MEJOR respuesta.
+
+A. Agregar la MAC address de cada cliente conocido a tu configuración de access-list es el único paso necesario
+B. Marcar la casilla "Do not permit unknown client" en la configuración wireless
+C. Desmarcar "Default Authenticate" en la configuración de la tarjeta wireless, y agregar la MAC address de cada cliente conocido a tu access-list asegurando que habilites "authenticate" en la entrada
+D. Configurar el servidor Radius bajo "/radius"
+E. Desmarcar "Default Authenticate" en la configuración de la tarjeta wireless, y agregar la MAC address de cada cliente conocido a tu connect-list
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Las reglas de Firewall NAT procesan solo el primer paquete de cada conexión.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Los mensajes de log de RouterOS se almacenan en el disco por defecto.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: B
+
+::PREGUNTA::
+El total-max-limit bajo Simple Queues limitará la carga (upload) y descarga (download) combinadas de la target-address de tu simple queue.
+
+A. Verdadero
+B. Falso
+::CORRECTA:: B
+
+::PREGUNTA::
+Quieres usar PCQ y permitir un máximo de 256k de descarga y carga para cada cliente. Elige los valores de los argumentos correctos para la Queue requerida.
+
+A. kind=pcq pcq-rate=256000 pcq-classifier=src-address
+B. kind=pcq pcq-rate=5000000 pcq-classifier=dst-address
+C. kind=pcq pcq-rate=5000000 pcq-classifier=src-address
+D. kind=pcq pcq-rate=1256000 pcq-classifier=dst-address
+E. kind=pcq pcq-rate=256000 pcq-classifier=dst-address
+
+::CORRECTA:: A,E
+
+::PREGUNTA::
+Los PPP Secrets se usan para:
+
+A. Usuarios de Router
+B. Clientes PPtP
+C. Clientes IPSec
+D. Clientes PPP
+E. Clientes L2TP
+F. Clientes PPPoE
+
+::CORRECTA:: B,D,E,F
+
+::PREGUNTA::
+Para conectar tu Router MikroTik a un AP wireless, tienes que:
+
+A. Usar el mismo SSID que en el AP
+B. Usar el mismo Radio Name
+C. Usar la misma Band (5 GHz, 2.4 GHz)
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué puerto usa PPTP por defecto?
+
+A. UDP 1721
+B. TCP 1721
+C. TCP 1723
+D. UDP 1723
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Quieres crear un AP para varias laptops (clientes no-RouterOS). Selecciona todas las opciones que puedes configurar en la interface wireless de MikroTik:
+
+A. mode=ap-bridge
+B. Security profile para encriptación WPA
+C. Nstreme para optimizar el enlace
+D. mode=bridge
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Al agregar una ruta estática (static route), siempre debes asegurarte de agregar tanto el gateway como la interface.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué sucederá si "Default forward" está deshabilitado en el menú wireless en un AP RouterOS?
+
+A. Los clientes no podrán conectarse al AP
+B. Solo los clientes con una regla de access-list coincidente podrán conectarse al AP
+C. Los clientes no podrán comunicarse entre sí
+D. El AP no podrá conectarse a los clientes
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Quieres transferir la configuración existente de '/ip firewall filter' de un Router a un sistema nuevo. Elige la mejor manera de hacerlo:
+
+A. Exportar la configuración global y eliminar todo menos '/ip firewall filter'
+B. Crear un backup, editar el archivo de backup y restaurar en el Router de destino
+C. Exportar solo '/ip firewall filter'
+D. Crear un backup solo de las reglas de '/ip firewall filter'
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿Dónde debes subir los nuevos paquetes de versión de MikroTik RouterOS para actualizar el Router?
+
+A. Cualquier directorio en /files
+B. El directorio raíz de FTP o el directorio /files del Router
+C. Menú System Backup
+D. Menú System Package
+
+::CORRECTA:: B
+
+::PREGUNTA::
+Es posible tener un PPTP Client y un PPTP server en un solo Router MikroTik al mismo tiempo.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Hay dos rutas en la tabla de ruteo:
+0 dst-addr=10.1.1.0/24 gateway=5.5.5.5
+1 dst-addr=10.1.1.4/30 gateway=5.6.6.6
+
+¿Qué gateway se usará para llegar a la dirección IP 10.1.1.6?
+
+A. 5.5.5.5
+B. ambos - la mitad del tráfico se ruteará por un gateway, la mitad por el otro
+C. 5.6.6.6
+D. la ruta requerida no está en la tabla de ruteo
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Tienes un DHCP server en tu Router MikroTik. Las direcciones IP 10.1.2.2-10.2.2.20 se distribuyen en la red DHCP. Adicionalmente, se definen 3 direcciones IP estáticas para tus servidores: 10.1.2.31-10.1.2.33. Después de un tiempo, se necesitan distribuir 20 direcciones IP más en la red. Es posible distribuir las direcciones IP extra sin agregar otro DHCP Server:
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
