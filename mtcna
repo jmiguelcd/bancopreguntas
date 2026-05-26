@@ -1,6 +1,6 @@
 ::CONFIG::
-preguntas: 5
-tiempo: 10
+preguntas: 16
+tiempo: 20
 titulo: Simulador MTCNA
 aprobacion: 60
 ::FIN_CONFIG::
