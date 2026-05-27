@@ -37,7 +37,7 @@ El total-max-limit bajo Simple Queues limitará la carga (upload) y descarga (do
 
 A. Verdadero
 B. Falso
-::CORRECTA:: B
+::CORRECTA:: A
 
 ::PREGUNTA::
 Quieres usar PCQ y permitir un máximo de 256k de descarga y carga para cada cliente. Elige los valores de los argumentos correctos para la Queue requerida.
@@ -248,7 +248,7 @@ D. /system resource
 ::CORRECTA:: B
 
 ::PREGUNTA::
-¿CUál es el puerto por defecto del Winbox?
+¿Cuál es el puerto por defecto del Winbox?
 
 A. tcp/80
 B. tcp/443
@@ -258,7 +258,7 @@ D. tcp/8291
 ::CORRECTA:: D
 
 ::PREGUNTA::
-¿CUál es el puerto por defecto del ssh?
+¿Cuál es el puerto por defecto del ssh?
 
 A. tcp/80
 B. tcp/443
