@@ -69,7 +69,7 @@ A. Usar el mismo SSID que en el AP
 B. Usar el mismo Radio Name
 C. Usar la misma Band (5 GHz, 2.4 GHz)
 
-::CORRECTA:: A
+::CORRECTA:: A,C
 
 ::PREGUNTA::
 ¿Qué puerto usa PPTP por defecto?
@@ -85,19 +85,21 @@ D. UDP 1723
 Quieres crear un AP para varias laptops (clientes no-RouterOS). Selecciona todas las opciones que puedes configurar en la interface wireless de MikroTik:
 
 A. mode=ap-bridge
-B. Security profile para encriptación WPA
+B. Security profile para encriptación WPA2
 C. Nstreme para optimizar el enlace
 D. mode=bridge
 
-::CORRECTA:: C
+::CORRECTA:: B,C
 
 ::PREGUNTA::
-Al agregar una ruta estática (static route), siempre debes asegurarte de agregar tanto el gateway como la interface.
+Marque todas las afirmaciones correctas sobre este comando: /export file=respaldo
 
-A. Verdadero
-B. Falso
+A. Exporta solo una parte de la configuración (por ejemplo, /ip firewall)
+B. Exporta la configuración completa del router (sin las contraseñas de usuario de RouterOS)
+C. Exporta un archivo que se pueden editar
+D. Exporta los registros de /log print
 
-::CORRECTA:: A
+::CORRECTA:: B,C
 
 ::PREGUNTA::
 ¿Qué sucederá si "Default forward" está deshabilitado en el menú wireless en un AP RouterOS?
@@ -158,3 +160,385 @@ A. Verdadero
 B. Falso
 
 ::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué cadena de firewall se debe utilizar para los filtros que protegen la interfaz de su enrutador?
+
+A. pre-routing
+B. post-routing
+C. input
+D. forward
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿Cuáles de los siguientes estados(flag) de ruta son posibles?
+
+A. S = Static
+B. D = Drop
+C. A = Active
+D. C = Connected
+
+::CORRECTA:: A,C,D
+
+::PREGUNTA::
+¿Qué letras aparecen junto a una ruta, cuando el administrador agrega una dirección válida a una interfaz activa?
+
+A. S = Static
+B. D = Drop
+C. A = Active
+D. C = Connected
+
+::CORRECTA:: C,D
+
+::PREGUNTA::
+El servidor PPPoE solo funciona dentro del dominio de difusión al que está conectado. Si hay un enrutador entre el servidor y el equipo del usuario final, no podrá crear un túnel PPPoE hacia dicho servidor.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Es posible limitar la cantidad de clientes que pueden conectarse a un punto de acceso?
+
+A. Si
+B. No
+C. Si, solo con access-list
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Los routers A y B funcionan como servidores PPPoE en dominios de difusión diferentes de su red. Es posible configurar el router A para que utilice las cuentas "/ppp secret" del router B para autenticar a los clientes PPPoE.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: B
+
+::PREGUNTA::
+La cola simple número 0 define 2M para subida y bajada para la IP de destino 10.10.0.33.
+La cola simple número 1 define 4M para subida y bajada para la IP de destino 10.10.0.33.
+
+¿Que velocidad puede obtener el cliente 10.10.0.33?
+
+A. 4M upload/download
+B. 6M upload/download
+C. 0M upload/download
+D. 2M upload/download
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Un IP Pool ¿puede contener direcciones de más de una subred?
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué menú de configuración debo usar para cambiar el puerto predeterminado de Winbox del router?
+
+A. /ip firewall filter
+B. /ip service
+C. /ip firewall service-ports
+D. /system resource
+
+::CORRECTA:: B
+
+::PREGUNTA::
+¿CUál es el puerto por defecto del Winbox?
+
+A. tcp/80
+B. tcp/443
+C. tcp/22
+D. tcp/8291
+
+::CORRECTA:: D
+
+::PREGUNTA::
+¿CUál es el puerto por defecto del ssh?
+
+A. tcp/80
+B. tcp/443
+C. tcp/22
+D. tcp/8291
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿Qué se puede utilizar como "target" en la cola simple?
+
+A. Client’s MAC address
+B. Address list name
+C. Server’s address
+D. Client’s address
+
+::CORRECTA:: C,D
+
+::PREGUNTA::
+¿Cuántos clientes inalámbricos pueden conectarse cuando la tarjeta inalámbrica está configurada en mode=bridge?
+
+A. 2007
+B. 2
+C. 100
+D. 1
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Para la funcionalidad de enrutamiento estático, además del paquete 'system' de RouterOS, también necesitará el siguiente paquete de software:
+
+A. advanced-tools
+B. No se requiere ningún paquete adicional
+C. dhcp
+D. routing
+
+::CORRECTA:: B
+
+::PREGUNTA::
+Una tabla de enrutamiento contiene las siguientes entradas:
+0 dst-address=10.0.0.0/24 gateway=10.1.5.126
+1 dst-address=10.1.5.0/24 gateway=10.1.1.1
+2 dst-address=10.1.0.0/24 gateway=25.1.1.1
+3 dst-address=10.1.5.0/25 gateway=10.1.1.2
+
+¿Qué puerta de enlace se utilizará para un paquete con la dirección de destino 10.1.5.126?
+
+A. 25.1.1.1
+B. 10.1.1.1
+C. 10.1.5.126
+D. 10.1.1.2
+
+::CORRECTA:: D
+
+::PREGUNTA::
+¿Qué hace la acción de firewall "Redirect"?
+Seleccione todas las afirmaciones verdaderas:
+
+A. Redirige un paquete a un puerto específico en un host de la red.
+B. Redirige un paquete a una dirección IP específica.
+C. Redirige un paquete al router.
+D. Redirige un paquete a un puerto específico del router.
+
+::CORRECTA:: C,D
+
+::PREGUNTA::
+¿Qué se necesita para configurar un cliente PPPoE?
+
+A. Dirección IP estática en la interfaz del cliente PPPoE
+B. Regla de enmascaramiento NAT del firewall (IP firewall)
+C. Interfaz (en la que funcionará el cliente PPPoE)
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿Qué opción de la configuración de la tarjeta inalámbrica debe desactivarse para que el router permita la conexión ÚNICAMENTE de los clientes que figuran en la access-list?
+
+A. Default Authenticate
+B. Default Forward
+C. Enable Access List
+D. Security Profile
+
+::CORRECTA:: A
+
+::PREGUNTA::
+/ip route 
+add disabled=no distance=1 dst-address=192.168.1.0/24 gateway=1.1.1.1 
+add disabled=no distance=1 dst-address=192.168.1.0/25 gateway=2.2.2.2 
+add disabled=no distance=1 dst-address=192.168.0.0/16 gateway=3.3.3.3
+
+¿Qué ruta se utilizará para llegar al host 192.168.1.55?
+
+A. Route via gateway 3.3.3.3
+B. Route via gateway 2.2.2.2
+C. Route via gateway 1.1.1.1
+
+::CORRECTA:: B
+
+::PREGUNTA::
+El router tiene interfaces inalámbricas y Ethernet; todas las interfaces son parte de un bridge. Para crear un servicio DHCP, el servidor DHCP debe configurarse en:
+
+A. El servicio DHCP no es posible en este escenario.
+B. Todos los puertos del bridge.
+C. Solo en la interfaz bridge.
+D. Las interfaces Ethernet e inalámbricas.
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿Qué ruta por defecto estará activa?
+/ip route 
+add disabled=no distance=10 dst-address=0.0.0.0/0 gateway=1.1.1.1 
+add disabled=no distance=5 dst-address=0.0.0.0/0 gateway=2.2.2.2
+
+A. Route via gateway 2.2.2.2
+B. Route via gateway 1.1.1.1
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Si ARP=reply-only está configurado en una interfaz, esta interfaz....
+
+A. Aceptar las combinaciones de direcciones IP y MAC que aparecen en la lista '/ip arp'.
+B. Aceptar todas las direcciones IP que aparecen en '/ip arp' como entradas estáticas.
+C. Agregar nuevas direcciones IP a la lista '/ip arp'.
+D. Agregar nuevas direcciones MAC a la lista '/ip arp'.
+E. Aceptar todas las direcciones MAC que aparecen en '/ip arp' como entradas estáticas.
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué regla se utiliza para bloquear el protocolo SMTP desde la interfaz LAN para los clientes?
+
+A. /ip firewall filter add chain=output protocol=tcp dst-port=25 action=drop in-interface=Lan
+B. /ip firewall filter add chain=forward protocol=tcp dst-port=25 action=drop in-interface=Lan
+C. /ip firewall filter add chain=input protocol=tcp dst-port=25 action=drop in-interface=Lan
+D. /ip firewall filter add chain=forward dst-port=25 action=drop in-interface=Lan
+
+::CORRECTA:: B
+
+::PREGUNTA::
+¿Está permitida la acción=masquerade en chain=dstnat?
+
+A. Sí, pero solo funciona para conexiones entrantes.
+B. Sí
+C. Sí, pero solo si se especifica la dirección de destino.
+D. No
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Durante un escaneo inalámbrico, para ver todas las frecuencias inalámbricas disponibles compatibles con la tarjeta, ¿Qué "Frequency Mode" se debe seleccionar?
+
+A. manual tx-power
+B. superchannel
+C. regulatory-domain
+
+::CORRECTA:: B
+
+::PREGUNTA::
+Para utilizar 'dynamic keys' en el Wireless Security Profile de un AP, DEBE configurar el servidor DHCP para que proporcione las claves dinámicas.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: B
+
+::PREGUNTA::
+¿Cuál es la regla de masquerade correcta para la red 192.168.0.0/24 en el router con interfaz de wan=ether1?
+
+A. /ip firewall nat add action=masquerade chain=srcnat src-address=192.168.0.0/24
+B. /ip firewall nat add action=masquerade chain=srcnat out-interface=ether1
+C. /ip firewall nat add action=masquerade out-interface=ether1 chain=dstnat
+D. /ip firewall nat add action=masquerade chain=srcnat
+
+::CORRECTA:: B
+
+::PREGUNTA::
+La función "Graphing" de RouterOS se utiliza para:
+
+A. Visualización del tráfico promedio y el uso de recursos
+B. Visualización del tráfico y el uso de recursos en tiempo real
+C. Limitación del ancho de banda
+D. Pruebas de ancho de banda
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Cuando un host envía una solicitud ARP, ¿qué tipo de dirección espera como respuesta?
+
+A. VLAN ID
+B. IP address
+C. MAC Address
+D. 802.11g
+
+::CORRECTA:: C
+
+::PREGUNTA::
+¿En qué orden se procesan las entradas en los Access-List y Connect-list?
+
+A. Por rango de intensidad de señal
+B. Por nombre de interfaz
+C. En orden aleatorio
+D. En orden secuencial
+
+::CORRECTA:: D
+
+::PREGUNTA::
+¿Cuánto tiempo es válida la licencia de Level 1 (gratuita)?
+
+A. 1 mes
+B. 1 año
+C. Tiempo infinito
+D. 24 horas
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Al usar la opción de enrutamiento 'check-gateway=ping', ¿cuál es el intervalo de intentos (en segundos) para las solicitudes?
+
+A. 20 s
+B. 30 s
+C. 10 s
+D. 60 s
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Para el usuario en la base de datos local de PPP Secrets/PPP Profiles, es posible:
+
+A. Permitir el inicio de sesión mediante PPPoE y PPTP, pero denegarlo mediante L2TP.
+B. Permitir/denegar el uso de más de una cuenta por parte de este usuario.
+C. Permitir solo el inicio de sesión mediante PPPoE.
+D. Denegar servicios (como Telnet) solo para este usuario o para un grupo de usuarios.
+E. Establecer valores máximos para la transferencia de datos (Rx/Tx).
+
+::CORRECTA:: B,C,E
+
+::PREGUNTA::
+¿Cuántas prioridades diferentes se pueden seleccionar para las "Simple queues" en MikroTik RouterOS?
+
+A. 1
+B. 8
+C. 16
+D. 0
+
+::CORRECTA:: B
+
+::PREGUNTA::
+¿Cuál es la prioridad más alta en las "Simple queues" en MikroTik RouterOS?
+
+A. 1
+B. 8
+C. 16
+D. 0
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué tipo de cifrado podría utilizarse para establecer una conexión con una simple clave de acceso sin usar un servidor de autenticación 802.1X?
+
+A. WPA PSK/WPA2 PSK
+B. WPA EAP/WPA2 EAP
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Es posible crear un túnel PPPoE cifrado en RouterOS.
+
+A. Verdadero
+B. Falso
+
+::CORRECTA:: A
+
+::PREGUNTA::
+¿Qué cadena de firewall debería utilizar para filtrar los paquetes ICMP desde el propio router?
+
+A. postrouting
+B. input
+C. forward
+D. output
+
+::CORRECTA:: D
