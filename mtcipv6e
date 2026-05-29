@@ -1,0 +1,371 @@
+::CONFIG::
+preguntas: 25
+tiempo: 60
+titulo: Simulador MTCIPv6E
+aprobacion: 60
+::FIN_CONFIG::
+
+::PREGUNTA::
+Protocolo de descubrimiento de vecinos que notifica al host que existe una ruta mejor para un destino:
+
+A. Redirect
+B. Anuncio del enrutador (Router advertisement)
+C. Anuncio del vecino (Neighbor advertisement)
+D. Solicitud del vecino (Neighbor solicitation)
+E. Solicitud del enrutador (Router solicitation)
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Método del protocolo IPv6 que se utiliza para averiguar si la dirección IP seleccionada ya está en uso por otro host:
+
+A. Detección de dirección duplicada (Duplicate address detection)
+B. Solicitud de dirección duplicada (Duplicate address solicitation)
+C. Búsqueda de dirección única (Unique address lookup)
+D. Detección de dirección única (Unique address detection)
+E. Detección de inaccesibilidad del vecino (Neighbor unreachability detection)
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Si la bandera de 'Configuración de dirección gestionada' (Managed address configuration) está habilitada, significa que:
+
+A. Las direcciones IPv6 serán emitidas tanto por SLAAC como por DHCPv6.
+B. Las direcciones IPv6 serán emitidas solo por SLAAC.
+C. Las direcciones IPv6 serán emitidas solo por DHCPv6.
+D. La información relacionada con DNS IPv6 será emitida por DHCPv6.
+
+::CORRECTA:: C
+
+::PREGUNTA::
+'Configuración de dirección gestionada' (Managed address configuration) es parte del siguiente tipo de mensaje de Neighbor discovery:
+
+A. Anuncio del enrutador (Router advertisement)
+B. Solicitud del enrutador (Router solicitation)
+C. Solicitud del vecino (Neighbor solicitation)
+D. Anuncio del vecino (Neighbor advertisement)
+E. Redirección (Redirect)
+
+::CORRECTA:: A
+
+::PREGUNTA::
+La parte infragmentable del flujo de datos IPv6 consta de (selecciona todas las que correspondan):
+
+A. Encabezado IPv6 (IPv6 header)
+B. Encabezado de opciones de salto a salto (Hop-by-Hop Options extension header) (si está presente)
+C. Encabezado de opciones de destino antes del encabezado de enrutamiento (Destination Options (before routing header) extension header) (si está presente)
+D. Encabezado de extensión de carga de seguridad encapsulada (Encapsulating Security Payload extension header)
+E. Datos (Data)
+F. Routing extension header (si esta presente)
+G. Encabezado de opciones de destino antes del encabezado de la capa superior(  Destination Options (before upper-layer header) extension header)
+
+::CORRECTA:: A,B,C
+
+::PREGUNTA::
+Selecciona las capas OSI que deben inicializarse para que funcione el cliente DHCP-PD o el cliente DHCPv6 (selecciona todas las que correspondan):
+
+A. Segment (TCP)
+B. Session
+C. Internet
+D. Network
+E. Data link
+F. Physical
+
+::CORRECTA:: E,F
+
+::PREGUNTA::
+La dirección de interfaz de bucle IPv6 es:
+
+A. ::1
+B. 127::1
+C. 127:0:0::1
+D. 2a02:610:7501:1000::2
+
+::CORRECTA:: A
+
+::PREGUNTA::
+La dirección IP de tu router es 2001:db8:610:6500::1 Para conectarte a tu router utilizando WinBox, de que forma debes escribirlo en el campo "Conectar a":
+
+A. [2001:db8:610:6500::1]
+B. 2001:db8:610:6500::1
+C. [2001:db8:610:6500:0:0:2:1]
+D. (2001:db8:610:6500::1)
+E. [2001:db8:510:6500::1]
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Selecciona las direcciones que representan la misma IP que 2001:db8:13:dab::1
+
+A. 2001:db8:13:dab:0:0:1
+B. 2001:0db8:0013:0dba:0000:0000:0000:0001
+C. 2001:0db8:0130:0dab:0000:0000:0000:0001
+D. 2001:0db8:0013:0dab:0000:0000:0000:0001
+E. 2001:0db8:0013:0dab::1
+
+::CORRECTA:: D,E
+
+::PREGUNTA::
+Si la bandera de 'Other configuration' está habilitada, ¿qué significa?
+
+A. La información de la ruta predeterminada está disponible a través de DHCPv6 (Default route information is available via DHCPv6).
+B. Toda la información de direcciones IPv6 está disponible solo a través de DHCPv6 (All IPv6 address information is available only via DHCPv6).
+C. TODA la información de direcciones IPv6 y otra información será proporcionada por SLAAC (ALL IPv6 address and other information will be provided by SLAAC).
+D. Otra configuración (por ejemplo, DNS) se proporcionará a través de DHCPv6 (Other configuration (e.g. DNS) will be provided by DHCPv6).
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Las Extensiones de Privacidad para IPv6 brindan seguridad adicional al cambiar periódicamente la dirección IP asignada. La dirección asignada se llama:
+
+A. Dirección local de enlace (Link local address)
+B. Dirección local única (Unique local address)
+C. Dirección temporal (Temporary address)
+D. Dirección de unicast global (Global unicast address)
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Es posible ejecutar tanto un servidor DHCP (IPv4) como un servidor DHCP-PD (IPv6) en (seleccione todas las posible respuestas):
+
+A. La misma interfaz física (On the same physical interface).
+B. La misma interfaz de puente (On the same bridge interface).
+C. El mismo puerto de puente (On the same bridge port).
+D. La misma interfaz PPPoE (On the same PPPoE interface).
+
+::CORRECTA:: A,B
+
+::PREGUNTA::
+Selecciona todos los comandos 'ping' de RouterOS escritos correctamente:
+
+A. /ping 2001:db8::1
+B. /ping fe00::101%ether1
+C. /ping ff02::1%wlan1
+D. /ping fe00::101 interface=ether1
+E. /ping6 ff02::1
+F. /ping fe00::101
+
+::CORRECTA:: A,B,C
+
+::PREGUNTA::
+Cuál de los siguientes mecanismos encapsula paquetes IPv4 en paquetes IPv6 y los transfiere a través de una red IPv6:
+
+A. Dual-stack
+B. 6to4
+C. 6RD
+D. DS-lite
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Selecciona cuál de los campos de encabezado IPv6 es equivalente al TTL (Time To Live) en IPv4:
+
+A. Flow Label
+B. TTLv6
+C. Scan Timer
+D. Hop Limit
+E. Hop Count
+
+::CORRECTA:: D
+
+::PREGUNTA::
+El tamaño MTU (Unidad Máxima de Transferencia) más pequeño posible para IPv6 es:
+
+A. 1500 bytes
+B. 1512 bytes
+C. 1280 bytes
+D. 1196 bytes
+
+::CORRECTA:: C
+
+::PREGUNTA::
+El encabezado IPv6 tiene un tamaño fijo de 40 bytes. Para incluir información adicional en el encabezado, se utiliza un tipo especial de encabezado:
+
+A. Extension header (Encabezado de extensión)
+B. Add-on header (Encabezado adicional)
+C. Next header (Próximo encabezado)
+D. Chained header (Encabezado encadenado)
+
+::CORRECTA:: A
+
+::PREGUNTA::
+El tamaño de prefijo más pequeño que se puede emitir utilizando SLAAC es:
+
+A. /56
+B. /60
+C. /64
+D. /96
+E. /128
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Dirección MAC del host (Host MAC address): 08:03:27:05:ae:53
+
+A. 2001:db8:abcd:5005:a03:27ff:fe05:ae53
+B. 2001:db8:abcd:5005:803:27ff:fe05:ae53
+C. 2001:db8:abcd:5005:203:27ff:fe05:ae53
+D. 2001:db8:abcd:5005:803:27fe:ff05:ae53
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Selecciona todas las direcciones de destino IPv6 válidas para la ruta predeterminada:
+
+A. 2000::/3
+B. ::/0
+C. 2003::/4
+D. ff80::/16
+
+::CORRECTA:: A,B
+
+::PREGUNTA::
+¿Qué hacen estas reglas de firewall?
+
+/ipv6 firewall filter
+add action=accept chain=input src-address=fe80::/10 protocol=icmpv6
+add action=accept chain=input dst-address=fe80::/10 protocol=icmpv6
+
+A. Pemitir al router recibir Neighbor discovery messages
+B. Permitir el envío de mensajes ping desde el router
+C. Bloquear que el router se comunique con otros hosts utilizando el protocolo ICMPv6
+D. Permitir al router recibir mensajes que se originen desde o sean enviados a direcciones link-local
+
+::CORRECTA:: D
+
+::PREGUNTA::
+Un servidor DHCPv6-PD asigna a sus clientes:
+
+A. IPv6 prefixes
+B. IPv6 addresses
+C. IPv6 SLAAC addresses
+D. /128 IPv6 addresses
+E. Ninguna de las respuestas.
+
+::CORRECTA:: A
+
+::PREGUNTA::
+El registro DNS inverso (PTR) para la dirección IP 2002:db8:1360:8c01:3::19 es:
+
+A. 9.1.0.0.0.0.0.0.0.0.0.0.3.0.0.0.1.0.c.8.0.6.3.1.8.b.d.0.2.0.0.2.ip6.arpa
+B. 9.1.0.0.0.0.0.0.0.0.0.0.3.0.0.0.1.0.c.8.0.6.3.1.8.b.d.0.2.0.0.2
+C. 9.1..3.0.0.0.1.0.c.8.0.6.3.1.8.b.d.0.2.0.0.2.ip6.arpa
+D. 9.1.0.0.0.0.0.0.0.0.0.0.3.0.0.0.1.0.c.8.0.6.3.1.8.d.b.0.2.0.0.2.ip6.arpa
+
+::CORRECTA:: A
+
+::PREGUNTA::
+La dirección IPv6 link-local generada automáticamente para una interfaz de red con la dirección MAC 31:e5:23:0a:22:82 será:
+
+A. fe80::31e5:23ff:fe0a:2282
+B. 2003::31e5:230a:2282
+C. fe80::33e5:23ff:fe0a:2282
+D. 2001::31e5:23ff:fe0a:2282
+E. fe80:33e5:23ff:fe0a::2282
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Las extensiones de encabezado IPv6 son las siguientes:
+
+A. Next header
+B. IPsec secret
+C. Destination Options
+D. Hop limit
+E. Fragment
+F. Hop-by-Hop Options
+
+::CORRECTA:: C,F
+
+::PREGUNTA::
+Selecciona todas las afirmaciones correctas sobre routers de red y hosts:
+
+A. Los hosts reciben mensajes de redirección y ajustan sus propias tablas de enrutamiento.
+B. Los routers envían y reenvían mensajes de redirección.
+C. Los routers reciben mensajes de redirección y ajustan sus propias tablas de enrutamiento.
+D. Los hosts envían y reenvían mensajes de redirección.
+
+::CORRECTA:: A,B
+
+::PREGUNTA::
+Selecciona el tipo de la siguiente dirección IPv6: fe80::e68d:8cff:fed3:ea20/64
+
+A. Global unicast (Unicast global)
+B. No es una dirección IPv6 válida
+C. Link local (Enlace local)
+D. Multicast (Multidifusión)
+
+::CORRECTA:: C
+
+::PREGUNTA::
+Hay 3 interfaces con la misma dirección link-local IPv6:
+
+A. No es posible tener 3 direcciones link-local idénticas en el mismo enrutador.
+B. El tráfico de red será reenviado correctamente.
+C. Los paquetes se multiplicarán en todas las interfaces con la misma dirección link-local.
+D. Esta configuración no funcionará debido a conflictos de enrutamiento.
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Selecciona las direcciones IPv6 válidas:
+
+A. fe80::e68d:8cff:febd:ea40
+B. 2001:db8:g00d:deed::1
+C. 2001:db8:127:0:1:1::3
+D. 0000:0000:0000:0000:0000:0000:0000:0001
+
+::CORRECTA:: A,C,D
+
+::PREGUNTA::
+IPv6 describes rules for the following types of addressing. Select the communication type between a single sender and the nearest of several receivers in a group?
+
+IPv6 describe reglas para los siguientes tipos de direccionamiento. ¿Selecciona el tipo de comunicación entre un único remitente y el receptor más cercano de varios receptores en un grupo?
+
+A. Broadcast (Difusión)
+B. Unicast (Unidifusión)
+C. Anycast (Anidifusión)
+D. Multicast (Multidifusión)
+
+::CORRECTA:: C
+
+::PREGUNTA::
+'Other configuration' es una parte del siguiente tipo de mensaje de Neighbor discovery:
+
+A. Neighbor solicitation
+B. Neighbor advertisement
+C. Redirect
+D. Router solicitation
+E. Anuncio del enrutador (Router advertisement)
+
+::CORRECTA:: E
+
+::PREGUNTA::
+Protocolo de resolución de direcciones (ARP) se utiliza en IPv4. ¿Cuál de las siguientes cumple funciones similares en IPv6?
+
+A. Neighbor discovery (Descubrimiento de vecinos)
+B. IPv6 functions without the need of ARP or similar protocol (IPv6 funciona sin necesidad de ARP o protocolo similar)
+C. ARPv6
+D. ARP
+
+::CORRECTA:: A
+
+::PREGUNTA::
+El protocolo IPv6 tiene un método incorporado para determinar cuál es el tamaño máximo de una unidad de transmisión que se puede utilizar para enviar datos entre dos hosts. El método se llama:
+
+A. Path MTU discovery
+B. Next header discovery
+C. Neighbor discovery
+D. Multicast listener discovery
+
+::CORRECTA:: A
+
+::PREGUNTA::
+Selecciona cuál de los siguientes tipos de direcciones no existe en IPv6:
+
+A. Broadcast (Difusión)
+B. Multicast (Multidifusión)
+C. Unicast (Unidifusión)
+D. Anycast
+
+::CORRECTA:: A
